@@ -37,6 +37,7 @@
 6. Запуск симулятора в режиме "трафика" в многопоточном режиме.
    Многопоточный режим ускоряет сбор данных.
    ```
+   export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
    python sim/run.py --episodes 1000 --config config/env.yml multi --processes 4
    ```   
    
